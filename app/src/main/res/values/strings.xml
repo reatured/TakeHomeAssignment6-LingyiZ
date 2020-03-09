@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TakeHomeAssignment6-LingyiZ</string>
     <string name="e1">Amount</string>
-    <string name="e2">Tax Percentage</string>
-    <string name="e3">Tip Percentage</string>
+    <string name="e2">Tip Percentage</string>
+    <string name="e3">Tax Percentage</string>
+
 </resources>

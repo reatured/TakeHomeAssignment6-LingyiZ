@@ -22,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
         getValue();
 
         Intent m = new Intent(this, DisplayWindow.class);
+
+        m.putExtra("Calculator", constructCalculator());
         startActivity(m);
-        m.putExtra("Amount", f1);
-        m.putExtra("Tax", f2);
-        m.putExtra("Tip", f3);
+
+
     }
 
     private void getValue() {
@@ -35,5 +36,10 @@ public class MainActivity extends AppCompatActivity {
         f2 = Float.parseFloat(e2.getText().toString());
         e3 = (EditText)findViewById(R.id.e3);
         f3 = Float.parseFloat(e3.getText().toString());
+    }
+
+    private Calculator constructCalculator(){
+        Calculator calculator = new Calculator(f1, f2, f3);
+        return calculator;
     }
 }
